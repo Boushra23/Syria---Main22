@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محافظة الحسكة</title>
+  <style>
+    :root {
+      --primary-color: #78350f;
+      --secondary-color: #f59e0b;
+      --accent-color: #047857;
+      --text-color: #333;
+      --light-bg: #f8fafc;
+      --dark-bg: #1e293b;
+    }
+    
+    body {
+      font-family: 'Tajawal', Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--dark-bg));
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+    
+    h3 {
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .stat-item {
+      background-color: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border-left: 4px solid var(--accent-color);
+    }
+    
+    .stat-item h4 {
+      margin: 0 0 0.5rem;
+      color: var(--dark-bg);
+    }
+    
+    .stat-item p {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    
+    .btn:hover {
+      background-color: var(--dark-bg);
+    }
+    
+    footer {
+      background-color: var(--dark-bg);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>محافظة الحسكة</h1>
+    <p>أرض الخابور والجزيرة السورية الغنية</p>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <h2>لمحة تاريخية</h2>
+      <p>الحسكة منطقة تاريخية تعود جذورها إلى العصور الحجرية الحديثة، حيث كانت موطناً للعديد من الحضارات القديمة مثل الآراميين والآشوريين. تقع على ضفاف نهر الخابور الذي كان مهداً للعديد من الحضارات الزراعية الأولى. تعرف المنطقة بغناها الأثري حيث تضم مواقع مهمة مثل تل حلف وتل براك. تتميز بتنوعها العرقي والثقافي الفريد في سوريا.</p>
+      
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=نهر+الخابور" alt="نهر الخابور">
+        <img src="https://via.placeholder.com/300x200?text=تل+حلف" alt="تل حلف">
+        <img src="https://via.placeholder.com/300x200?text=سوق+الحسكة" alt="سوق الحسكة">
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>المعلومات الأساسية</h2>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <h4>عدد السكان</h4>
+          <p>≈ 1.5 مليون</p>
+        </div>
+        <div class="stat-item">
+          <h4>المساحة</h4>
+          <p>23,334 كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الكثافة السكانية</h4>
+          <p>64/كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الارتفاع عن سطح البحر</h4>
+          <p>300 م</p>
+        </div>
+      </div>
+      
+      <h3>الموقع الجغرافي</h3>
+      <p>تقع محافظة الحسكة في أقصى الشمال الشرقي من سوريا، تحدها تركيا من الشمال، العراق من الشرق والجنوب، ومحافظتي دير الزور والرقة من الغرب. تتميز بسهولها الخصبة التي تغذيها أنهار الخابور والفرات.</p>
+      
+      <h3>المناخ</h3>
+      <p>مناخ الحسكة قاري جاف، مع صيف حار جداً حيث تصل درجات الحرارة إلى 45°م، وشتاء بارد مع احتمالية تساقط الثلوج. الأمطار شحيحة وتتركز في فصل الشتاء والربيع.</p>
+    </div>
+    
+    <div class="card">
+      <h2>أهم المعالم السياحية</h2>
+      
+      <h3>نهر الخابور</h3>
+      <p>أحد أهم روافد نهر الفرات، يشتهر بمناظره الطبيعية الخلابة ووجود العديد من المواقع الأثرية على ضفافه. يعتبر مصدراً رئيسياً للري في المنطقة.</p>
+      
+      <h3>تل حلف</h3>
+      <p>موقع أثري مهم يعود إلى الألفية السادسة قبل الميلاد، اكتشف فيه حضارة تل حلف التي اشتهرت بفخارها المميز. يضم الموقع بقايا معابد وقصور قديمة.</p>
+      
+      <h3>متحف الحسكة</h3>
+      <p>يضم مجموعة مهمة من الآثار التي تعود لعصور مختلفة، خاصةً آثار حضارة تل حلف والآشوريين والرومان.</p>
+      
+      <h3>سوق الحسكة القديم</h3>
+      <p>يتميز بتنوعه الثقافي حيث يعكس التنوع العرقي للمحافظة، ويشتهر ببيع المنتجات المحلية مثل الصوف والمنسوجات اليدوية.</p>
+    </div>
+    
+    <div class="card">
+      <h2>الاقتصاد والثقافة</h2>
+      <p>يعتمد اقتصاد الحسكة بشكل رئيسي على الزراعة خاصةً زراعة القمح والقطن، كما تشتهر بتربية المواشي. تحتوي على بعض حقول النفط المهمة في سوريا. تشتهر بالصناعات الغذائية والنسيجية.</p>
+      <p>تتميز الحسكة بتنوعها الثقافي والعرقي حيث تضم العرب والأكراد والسريان والآشوريين والأرمن. تشتهر بمطبخها الذي يجمع بين المأكولات العربية والكردية، خاصةً أطباق اللبن والبرغل.</p>
+      
+      <a href="index.html" class="btn">العودة إلى الخريطة الرئيسية</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2023 محافظة الحسكة | جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>

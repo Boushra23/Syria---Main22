@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محافظة دمشق</title>
+  <style>
+    :root {
+      --primary-color: #1e3a8a;
+      --secondary-color: #e11d48;
+      --accent-color: #059669;
+      --text-color: #333;
+      --light-bg: #f8fafc;
+      --dark-bg: #1e293b;
+    }
+    
+    body {
+      font-family: 'Tajawal', Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--dark-bg));
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+    
+    h3 {
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .stat-item {
+      background-color: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border-left: 4px solid var(--accent-color);
+    }
+    
+    .stat-item h4 {
+      margin: 0 0 0.5rem;
+      color: var(--dark-bg);
+    }
+    
+    .stat-item p {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    
+    .btn:hover {
+      background-color: var(--dark-bg);
+    }
+    
+    footer {
+      background-color: var(--dark-bg);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>محافظة دمشق</h1>
+    <p>عاصمة الجمهورية العربية السورية وأقدم عاصمة مأهولة في التاريخ</p>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <h2>لمحة تاريخية</h2>
+      <p>تعتبر دمشق واحدة من أقدم المدن المأهولة باستمرار في العالم، حيث يعود تاريخها إلى أكثر من 11000 عام. كانت عاصمة للعديد من الحضارات بما في ذلك الآراميين والرومان والبيزنطيين والأمويين. تشتهر دمشق بتراثها الثقافي الغني وتاريخها العريق الذي ترك بصماته في كل زاوية من زوايا المدينة.</p>
+      
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=الجامع+الأموي" alt="الجامع الأموي">
+        <img src="https://via.placeholder.com/300x200?text=سوق+الحميدية" alt="سوق الحميدية">
+        <img src="https://via.placeholder.com/300x200?text=قلعة+دمشق" alt="قلعة دمشق">
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>المعلومات الأساسية</h2>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <h4>عدد السكان</h4>
+          <p>≈ 2.1 مليون</p>
+        </div>
+        <div class="stat-item">
+          <h4>المساحة</h4>
+          <p>105 كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الكثافة السكانية</h4>
+          <p>20,000/كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الارتفاع عن سطح البحر</h4>
+          <p>680 م</p>
+        </div>
+      </div>
+      
+      <h3>الموقع الجغرافي</h3>
+      <p>تقع دمشق في جنوب غرب سوريا عند سفح جبل قاسيون، على هضبة ارتفاعها 680 متراً عن سطح البحر. تبعد حوالي 80 كم عن البحر الأبيض المتوسط، وتحيط بها غوطة دمشق الخصبة من ثلاث جهات.</p>
+      
+      <h3>المناخ</h3>
+      <p>مناخ دمشق شبه جاف، حيث تتراوح درجات الحرارة صيفاً بين 30-40°م، بينما تصل في الشتاء إلى ما دون الصفر أحياناً. تتميز بهطول أمطار شتوية معتدلة وثلوج نادرة.</p>
+    </div>
+    
+    <div class="card">
+      <h2>أهم المعالم السياحية</h2>
+      
+      <h3>الجامع الأموي</h3>
+      <p>أحد أكبر المساجد في العالم وأشهر معالم دمشق، بني في العصر الأموي على موقع معبد آرامي ثم كنيسة بيزنطية. يتميز بمآذنه الشاهقة وفنائه الواسع وفسيفسائه الرائعة.</p>
+      
+      <h3>سوق الحميدية</h3>
+      <p>أشهر أسواق الشرق الأوسط، يمتد لمسافة 600 متر ويشتهر بمحلاته التي تبيع كل شيء من الأقمشة إلى التوابل والمصنوعات اليدوية التقليدية.</p>
+      
+      <h3>قلعة دمشق</h3>
+      <p>قلعة تاريخية تعود إلى العصور الوسطى، بناها الأيوبيون في القرن الثالث عشر الميلادي، وتعتبر نموذجاً رائعاً للعمارة العسكرية الإسلامية.</p>
+      
+      <h3>حي الأمين</h3>
+      <p>من أقدم أحياء دمشق، يتميز بشوارعه الضيقة المتعرجة ومنازله القديمة ذات الهندسة المعمارية الفريدة.</p>
+    </div>
+    
+    <div class="card">
+      <h2>الاقتصاد والثقافة</h2>
+      <p>تعتبر دمشق المركز الاقتصادي والثقافي الرئيسي في سوريا. تشتهر بصناعاتها التقليدية مثل النسيج والحرف اليدوية وصناعة الحلويات. كما أنها مركز للتعليم العالي حيث تضم جامعة دمشق التي تأسست عام 1923.</p>
+      <p>تزخر دمشق بالعديد من المتاحف مثل المتحف الوطني الذي يضم قطعاً أثرية تعود إلى مختلف العصور التاريخية. كما تشتهر بمطبخها الغني الذي يجمع بين الأصالة والتنوع.</p>
+      
+      <a href="index.html" class="btn">العودة إلى الخريطة الرئيسية</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2023 محافظة دمشق | جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>

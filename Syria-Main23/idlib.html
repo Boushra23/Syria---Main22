@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محافظة إدلب</title>
+  <style>
+    :root {
+      --primary-color: #3f6212;
+      --secondary-color: #65a30d;
+      --accent-color: #0d9488;
+      --text-color: #333;
+      --light-bg: #f8fafc;
+      --dark-bg: #1e293b;
+    }
+    
+    body {
+      font-family: 'Tajawal', Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--dark-bg));
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+    
+    h3 {
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .stat-item {
+      background-color: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border-left: 4px solid var(--accent-color);
+    }
+    
+    .stat-item h4 {
+      margin: 0 0 0.5rem;
+      color: var(--dark-bg);
+    }
+    
+    .stat-item p {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    
+    .btn:hover {
+      background-color: var(--dark-bg);
+    }
+    
+    footer {
+      background-color: var(--dark-bg);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>محافظة إدلب</h1>
+    <p>سلة غذاء سوريا وجنة الزيتون</p>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <h2>لمحة تاريخية</h2>
+      <p>إدلب منطقة تاريخية تعود جذورها إلى العصور القديمة، حيث كانت جزءاً من مملكة إيبلا العريقة. ازدهرت في العصور الكلاسيكية كمركز زراعي وتجاري مهم. تعاقبت عليها الحضارات المختلفة من آرامية ويونانية ورومانية وبيزنطية وإسلامية. تشتهر بتراثها الزراعي العريق وقراها الأثرية الكثيرة. لعبت دوراً مهماً في التاريخ الإسلامي كإحدى ثغور بلاد الشام.</p>
+      
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=أثار+إيبلا" alt="آثار إيبلا">
+        <img src="https://via.placeholder.com/300x200?text=بساتين+الزيتون" alt="بساتين الزيتون">
+        <img src="https://via.placeholder.com/300x200?text=قلعة+حارم" alt="قلعة حارم">
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>المعلومات الأساسية</h2>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <h4>عدد السكان</h4>
+          <p>≈ 1.5 مليون</p>
+        </div>
+        <div class="stat-item">
+          <h4>المساحة</h4>
+          <p>6,097 كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الكثافة السكانية</h4>
+          <p>246/كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الارتفاع عن سطح البحر</h4>
+          <p>500 م</p>
+        </div>
+      </div>
+      
+      <h3>الموقع الجغرافي</h3>
+      <p>تقع محافظة إدلب في شمال غرب سوريا، تحدها تركيا من الشمال والغرب، محافظة حلب من الشرق، محافظة حماة من الجنوب. تتميز بسهولها الخصبة وجبالها المغطاة بأشجار الزيتون.</p>
+      
+      <h3>المناخ</h3>
+      <p>مناخ إدلب متوسطي معتدل، مع صيف حار وجاف وشتاء بارد وممطر. تتراوح درجات الحرارة صيفاً بين 25-35°م، بينما تصل في الشتاء إلى 5°م مع تساقط الثلوج أحياناً على المرتفعات.</p>
+    </div>
+    
+    <div class="card">
+      <h2>أهم المعالم السياحية</h2>
+      
+      <h3>آثار إيبلا</h3>
+      <p>موقع مملكة إيبلا العريقة التي تعود للألف الثالث قبل الميلاد، اكتشف فيها أرشيف كامل من الألواح المسمارية التي غيرت فهمنا لتاريخ المنطقة.</p>
+      
+      <h3>بساتين الزيتون</h3>
+      <p>تشتهر إدلب بأكبر مساحة من بساتين الزيتون في سوريا، والتي تشكل لوحة طبيعية خلابة خاصة في فصل الربيع.</p>
+      
+      <h3>قلعة حارم</h3>
+      <p>قلعة تاريخية تعود للعصور الوسطى، تقع على تلة مشرفة على سهل إدلب الخصب، كانت نقطة دفاعية مهمة في العصور الإسلامية.</p>
+      
+      <h3>مدينة معرة النعمان</h3>
+      <p>تشتهر بمتحفها الذي يضم فسيفساء رائعة، وبأسواقها التقليدية التي تعكس التراث الشعبي للمنطقة.</p>
+    </div>
+    
+    <div class="card">
+      <h2>الاقتصاد والثقافة</h2>
+      <p>يعتمد اقتصاد إدلب بشكل رئيسي على الزراعة خاصةً زراعة الزيتون الذي تشتهر به، بالإضافة إلى القمح والقطن والفستق الحلبي. تشتهر بالصناعات الغذائية خاصةً معاصر الزيتون وتجفيف الفواكه.</p>
+      <p>تتميز إدلب بثقافتها الشعبية الغنية وتراثها الريفي الأصيل. تشتهر بمطبخها الذي يعتمد على زيت الزيتون، خاصةً الزيتون المعتق والكباب الإدلبي والمأكولات المحشوة.</p>
+      
+      <a href="index.html" class="btn">العودة إلى الخريطة الرئيسية</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2023 محافظة إدلب | جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>

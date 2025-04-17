@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محافظة حمص</title>
+  <style>
+    :root {
+      --primary-color: #4338ca;
+      --secondary-color: #7c3aed;
+      --accent-color: #047857;
+      --text-color: #333;
+      --light-bg: #f8fafc;
+      --dark-bg: #1e293b;
+    }
+    
+    body {
+      font-family: 'Tajawal', Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--dark-bg));
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+    
+    h3 {
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .stat-item {
+      background-color: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border-left: 4px solid var(--accent-color);
+    }
+    
+    .stat-item h4 {
+      margin: 0 0 0.5rem;
+      color: var(--dark-bg);
+    }
+    
+    .stat-item p {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    
+    .btn:hover {
+      background-color: var(--dark-bg);
+    }
+    
+    footer {
+      background-color: var(--dark-bg);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>محافظة حمص</h1>
+    <p>قلب سوريا النابض وملتقى الحضارات</p>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <h2>لمحة تاريخية</h2>
+      <p>حمص من أقدم المدن السورية حيث يعود تاريخها إلى الألف الثالث قبل الميلاد. كانت تعرف في العصور القديمة باسم "إميسا" وكانت مركزاً لمملكة عربية مهمة. تعاقبت عليها حضارات عديدة منها الرومانية والبيزنطية والإسلامية. لعبت دوراً مهماً في التاريخ الإسلامي حيث انطلقت منها حركة الفتح الإسلامي نحو الشمال.</p>
+      
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=قلعة+الحصن" alt="قلعة الحصن">
+        <img src="https://via.placeholder.com/300x200?text=جامع+خالد+بن+الوليد" alt="جامع خالد بن الوليد">
+        <img src="https://via.placeholder.com/300x200?text=بحيرة+قطينة" alt="بحيرة قطينة">
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>المعلومات الأساسية</h2>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <h4>عدد السكان</h4>
+          <p>≈ 1.8 مليون</p>
+        </div>
+        <div class="stat-item">
+          <h4>المساحة</h4>
+          <p>42,223 كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الكثافة السكانية</h4>
+          <p>43/كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الارتفاع عن سطح البحر</h4>
+          <p>501 م</p>
+        </div>
+      </div>
+      
+      <h3>الموقع الجغرافي</h3>
+      <p>تقع محافظة حمص في وسط سوريا وتحدها محافظات حماة من الشمال، ريف دمشق من الجنوب، دمشق ولبنان من الغرب، والرقة ودير الزور من الشرق. تتميز بموقعها الاستراتيجي الذي يربط شمال سوريا بجنوبها وشرقها بغربها.</p>
+      
+      <h3>المناخ</h3>
+      <p>مناخ حمص متوسطي معتدل، مع صيف جاف وحار وشتاء بارد وممطر. تتراوح درجات الحرارة صيفاً بين 25-35°م، بينما تصل في الشتاء إلى ما دون الصفر مع تساقط للثلوج أحياناً.</p>
+    </div>
+    
+    <div class="card">
+      <h2>أهم المعالم السياحية</h2>
+      
+      <h3>قلعة الحصن</h3>
+      <p>إحدى أهم القلاع الصليبية في العالم، تقع على بعد 65 كم غرب حمص. بناها الصليبيون في القرن الحادي عشر وتعتبر من أفضل نماذج العمارة العسكرية في العصور الوسطى.</p>
+      
+      <h3>جامع خالد بن الوليد</h3>
+      <p>أشهر معالم حمص، بني في القرن العشرين فوق ضريح القائد الإسلامي خالد بن الوليد. يتميز بمآذنه الأربع وقبابه الثماني.</p>
+      
+      <h3>بحيرة قطينة</h3>
+      <p>أكبر بحيرة صناعية في سوريا، تقع على نهر العاصي وتشتهر بمناظرها الخلابة وتوفر فرصاً للتنزه وصيد السمك.</p>
+      
+      <h3>شارع الشهداء</h3>
+      <p>الشارع الرئيسي في حمص، يضم العديد من المباني التاريخية والمقاهي التقليدية.</p>
+    </div>
+    
+    <div class="card">
+      <h2>الاقتصاد والثقافة</h2>
+      <p>تشتهر حمص بالصناعات النفطية حيث تضم مصفاة النفط الرئيسية في سوريا. كما تشتهر بالصناعات الزراعية والغذائية. تعتبر حمص مركزاً زراعياً مهماً لإنتاج القمح والقطن والشمندر السكري.</p>
+      <p>تتميز حمص بتنوعها الثقافي والديني، حيث تضم مساجد وكنائس تاريخية تعود لعصور مختلفة. كما تشتهر بمطبخها المحلي خاصةً بالكبة الحمصية والحلويات مثل المعمول والهريسة.</p>
+      
+      <a href="index.html" class="btn">العودة إلى الخريطة الرئيسية</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2023 محافظة حمص | جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>

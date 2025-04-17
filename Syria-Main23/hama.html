@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محافظة حماة</title>
+  <style>
+    :root {
+      --primary-color: #7c2d12;
+      --secondary-color: #ea580c;
+      --accent-color: #0d9488;
+      --text-color: #333;
+      --light-bg: #f8fafc;
+      --dark-bg: #1e293b;
+    }
+    
+    body {
+      font-family: 'Tajawal', Arial, sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.8;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary-color), var(--dark-bg));
+      color: white;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+    
+    h3 {
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .stat-item {
+      background-color: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border-left: 4px solid var(--accent-color);
+    }
+    
+    .stat-item h4 {
+      margin: 0 0 0.5rem;
+      color: var(--dark-bg);
+    }
+    
+    .stat-item p {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+    
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    
+    .btn:hover {
+      background-color: var(--dark-bg);
+    }
+    
+    footer {
+      background-color: var(--dark-bg);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>محافظة حماة</h1>
+    <p>مدينة النواعير وعروس العاصي</p>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <h2>لمحة تاريخية</h2>
+      <p>حماة من أقدم المدن المأهولة في العالم، يعود تاريخها إلى العصر الحجري الحديث. كانت تعرف في العصور القديمة باسم "إيماتا" و"إيبيفانيا". تعاقبت عليها الحضارات الآرامية والآشورية واليونانية والرومانية والبيزنطية والإسلامية. اشتهرت عبر التاريخ بصناعاتها اليدوية وزراعتها المزدهرة بفضل نهر العاصي. تعتبر النواعير أحد أبرز رموزها الحضارية التي تعود إلى العصور القديمة.</p>
+      
+      <div class="gallery">
+        <img src="https://via.placeholder.com/300x200?text=نواعير+حماة" alt="نواعير حماة">
+        <img src="https://via.placeholder.com/300x200?text=قلعة+حماة" alt="قلعة حماة">
+        <img src="https://via.placeholder.com/300x200?text=نهر+العاصي" alt="نهر العاصي">
+      </div>
+    </div>
+    
+    <div class="card">
+      <h2>المعلومات الأساسية</h2>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <h4>عدد السكان</h4>
+          <p>≈ 1.6 مليون</p>
+        </div>
+        <div class="stat-item">
+          <h4>المساحة</h4>
+          <p>8,883 كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الكثافة السكانية</h4>
+          <p>180/كم²</p>
+        </div>
+        <div class="stat-item">
+          <h4>الارتفاع عن سطح البحر</h4>
+          <p>270 م</p>
+        </div>
+      </div>
+      
+      <h3>الموقع الجغرافي</h3>
+      <p>تقع محافظة حماة في وسط سوريا على ضفاف نهر العاصي. تحدها محافظات إدلب من الشمال، حلب من الشمال الشرقي، الرقة من الشرق، حمص من الجنوب، وطرطوس واللاذقية من الغرب. تتميز بموقعها الاستراتيجي الذي يربط شمال سوريا بجنوبها.</p>
+      
+      <h3>المناخ</h3>
+      <p>مناخ حماة متوسطي معتدل، مع صيف حار وجاف وشتاء بارد وممطر. تتراوح درجات الحرارة صيفاً بين 30-38°م، بينما تصل في الشتاء إلى 5°م مع تساقط الأمطار والثلوج أحياناً على المرتفعات.</p>
+    </div>
+    
+    <div class="card">
+      <h2>أهم المعالم السياحية</h2>
+      
+      <h3>نواعير حماة</h3>
+      <p>أشهر معالم حماة، وهي عجلات مائية خشبية ضخمة تعود إلى العصور القديمة، تستخدم لرفع مياه نهر العاصي إلى القنوات العلوية. تعتبر من أقدم أنظمة الري في العالم.</p>
+      
+      <h3>قلعة حماة</h3>
+      <p>تقع على تلة في وسط المدينة، تعود إلى العصور الوسطى وتوفر إطلالة بانورامية على المدينة ونهر العاصي.</p>
+      
+      <h3>قصر العظم</h3>
+      <p>تحفة معمارية تعود إلى العصر العثماني، كان مقراً للولاة ويتميز بزخارفه ونقوشه الفنية الرائعة.</p>
+      
+      <h3>المتحف الوطني</h3>
+      <p>يضم آثاراً تعود لعصور مختلفة بدءاً من عصور ما قبل التاريخ وحتى العصر الإسلامي، خاصةً آثار مملكة حماة الآرامية.</p>
+    </div>
+    
+    <div class="card">
+      <h2>الاقتصاد والثقافة</h2>
+      <p>يعتمد اقتصاد حماة على الزراعة خاصةً زراعة القمح والقطن والشمندر السكري، بالإضافة إلى الصناعات الغذائية والنسيجية. تشتهر بصناعة المنسوجات والسجاد اليدوي.</p>
+      <p>تتميز حماة بثقافتها الشعبية الغنية وتراثها الموسيقي والفني. تشتهر بمطبخها الذي يجمع بين الأصالة والتنوع، خاصةً الكبة الحموية والمشاوي والحلويات مثل المعمول والبقلاوة.</p>
+      
+      <a href="index.html" class="btn">العودة إلى الخريطة الرئيسية</a>
+    </div>
+  </div>
+  
+  <footer>
+    <p>© 2023 محافظة حماة | جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
